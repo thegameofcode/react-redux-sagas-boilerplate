@@ -6,8 +6,8 @@
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
-    "dev": "NODE_ENV=development npm start",
-    "start": "node devServer.js",
+    "dev": "NODE_ENV=development node devServer.js",
+    "pro": "NODE_ENV=production node proServer.js",
     "lint": "eslint src"
   },
   "repository": {
@@ -35,6 +35,8 @@
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.15.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.1.1",

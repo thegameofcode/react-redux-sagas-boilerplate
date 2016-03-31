@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-
-console.log( 'WEBPACK_DEV' );
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	devtool: 'cheap-module-eval-source-map',
@@ -17,6 +16,7 @@ module.exports = {
 		publicPath: '/'
 	},
 	plugins: [
+		new HtmlWebpackPlugin( { template: 'html!./src/index.html' } ),
 		/**
 		 * This is where the magic happens! You need this to enable Hot Module Replacement!
 		 */
@@ -35,7 +35,7 @@ module.exports = {
 		 */
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify('development')
-		}),
+		})
 	],
 	module: {
 		loaders: [
@@ -57,10 +57,6 @@ module.exports = {
 					'style-loader',
 					'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]_[local]'
 				]
-			},
-			{
-				test: /\.html$/,
-				loader: 'file?name=[name].[ext]'
 			}
 		]
 	}
