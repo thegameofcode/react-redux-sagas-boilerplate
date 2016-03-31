@@ -1,0 +1,56 @@
+{
+  "RICK": {
+    "name": "Rick",
+    "surname": "Deckard",
+    "email": "honest-deckard@gmail.com",
+    "data": {
+      "Google Account": {
+        "Photo": "./pix/deckard_google_picture.png",
+        "Service": "google",
+        "Username": "honest-deckard@gmail.com",
+        "Password": "qwerty1234"
+      },
+      "GitHub": {
+        "Photo": "./pix/deckard_github_picture.png",
+        "Service": "github",
+        "Username": "honest-deckard",
+        "Password": "qwerty1234"
+      }
+    }
+  },
+  "ROY": {
+    "name": "Roy",
+    "surname": "Batty",
+    "email": "honest-roy@gmail.com",
+    "data": {
+      "Google Account": {
+        "Photo": "./pix/batty_google_picture.png",
+        "Service": "google",
+        "Username": "honest-batty@gmail.com",
+        "Password": "qwerty1234"
+      },
+      "GitHub": {
+        "Photo": "./pix/batty_github_picture.png",
+        "Service": "github",
+        "Username": "honest-batty",
+        "Password": "qwerty1234"
+      }
+    }
+  },
+  "TYRELL": {
+    "Name": "Tyrell Corp",
+    "Photo": "./pix/tyrell_logo.png"
+  },
+  "WAYLAND": {
+    "Name": "Wayland Industries",
+    "Photo": "./pix/wayland_logo.png"
+  },
+  "NEXUS6": {
+    "Name": "Nexus 6",
+    "Photo": "./pix/nexus6_logo.png"
+  },
+  "ANDROIDS": {
+    "Name": "Do Androids Dream of Electric Sheep?",
+    "Photo": "./pix/androids_logo.png"
+  }
+}
