@@ -1,9 +1,8 @@
 import { fork } from 'redux-saga/effects'
-import { watchIncrementIfOdd, watchIncrementAsync } from './counter';
+import * as weatherSagas from './weather';
 
 export default function* root() {
   yield [
-    fork(watchIncrementIfOdd),
-    fork(watchIncrementAsync)
+    fork(weatherSagas.watchFetchWeather)
   ]
 }
