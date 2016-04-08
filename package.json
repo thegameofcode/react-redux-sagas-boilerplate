@@ -11,7 +11,7 @@
     "dev-server": "NODE_ENV=development node devServer.js",
     "pro": "NODE_ENV=production node proServer.js",
     "selenium-server": "selenium-standalone start",
-    "test-acceptance": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=test babel-node ./node_modules/.bin/cucumber-js test-acceptance/features -r test-acceptance/step_definitions --format pretty --strict"
+    "test-acceptance": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=test babel-node ./node_modules/.bin/cucumber-js test/acceptance/features -r test/acceptance/step_definitions --format pretty --strict"
   },
   "repository": {
     "type": "git",
