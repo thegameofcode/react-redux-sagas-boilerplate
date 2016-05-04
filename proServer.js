@@ -9,7 +9,7 @@ app.use('/', express.static(__dirname + '/dist'));
 
 app.listen(PORT, 'localhost', (err) => {
 	if (err) {
-		console.log(err);
+		console.error(err);
 		return;
 	}
 	console.log(`server initialized at ${PORT}`);

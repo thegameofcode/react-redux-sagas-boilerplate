@@ -62,6 +62,10 @@ module.exports = {
 					'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]'
 				)
 			}
+			, {
+				test: /\.(woff|woff2|eot|ttf|svg)$/,
+				loader: 'file-loader'
+			}
 		]
 	}
 };

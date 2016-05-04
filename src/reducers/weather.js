@@ -6,21 +6,30 @@ const initialState = {
 	error: null
 };
 
-function fetchWeather(state, action) {
+function fetchWeather(state) {
 	return {
 		...state,
+		forecasts: [],
 		error: null,
 		loading: true
 	};
 }
 
 function fetchWeatherOK(state, action) {
+	let result
+
+	if (action.response.data.cod == 404) {
+		result = []
+	} else {
+		result = action.response.data.list
+	}
+
 	return {
 		...state,
 		error: null,
 		loading: false,
-		forecasts: [...state.forecasts, action.forecast.data]
-	};
+		forecasts: [...state.forecasts, ...result]
+	}
 }
 
 function fetchWeatherKO(state, { error }) {

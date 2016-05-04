@@ -1,9 +1,8 @@
-import {takeEvery} from 'redux-saga';
-import {call, put, select, take} from 'redux-saga/effects';
-import fetchWeatherService from '../services/fetch_weather';
+import { takeEvery } from 'redux-saga';
+import { call, put, select, take } from 'redux-saga/effects';
+import fetchWeatherService from '../services/fetchWeather';
 import * as actions from '../actions/weather';
 import * as actionTypes from '../constants/actions/weather';
-
 
 function* fetchWeather(action) {
 	try {

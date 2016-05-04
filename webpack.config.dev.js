@@ -13,7 +13,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.js',
-		publicPath: '/'
+		publicPath: 'http://localhost:3000/'
 	},
 	plugins: [
 		new HtmlWebpackPlugin( { template: 'html!./src/index.html' } ),
@@ -44,19 +44,24 @@ module.exports = {
 				exclude: [/node_modules/, /styles/],
 				loaders: ['babel'],
 				include: path.join(__dirname, 'src')
-			},
-			{
+			}
+			, {
 				test: /\.global\.css$/,
 				loaders: [
 					'style-loader',
 					'css-loader?sourceMap'
 				]
-			}, {
+			}
+			, {
 				test: /^((?!\.global).)*\.css$/,
 				loaders: [
 					'style-loader',
 					'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]_[local]'
 				]
+			}
+			, {
+				test: /\.(woff|woff2|eot|ttf|svg)$/,
+				loader: 'file-loader'
 			}
 		]
 	}

@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 
 export default class App extends Component {
-
 	render() {
-		console.log('render app ', this.props)
 		return (
 			<div>
 				{ this.props.children }
@@ -17,7 +15,6 @@ export default class App extends Component {
 					})()
 				}
 			</div>
-
 		);
 	}
 };
