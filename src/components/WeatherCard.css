@@ -1,10 +1,11 @@
-.root {
-    text-align: center;
-    margin-bottom: 100px;
+.wrapper {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
-.icon {
-    font-family: WeatherIcons;
-    font-size: 100px;
-    padding: 0;
+.wrapper > img {
+  height: 100px;
 }

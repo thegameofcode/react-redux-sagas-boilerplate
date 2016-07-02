@@ -1,9 +1,8 @@
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
+import {connect} from 'react-redux'
 import Home from '../components/Home'
 
-function mapStateToProps(state) {
-  return {};
+function mapStateToProps (state) {
+  return {}
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(Home)

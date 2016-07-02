@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-import weather from './weather';
+import { combineReducers } from 'redux'
+import { routerReducer } from 'react-router-redux'
+import weather from './weather'
 
 const rootReducer = combineReducers({
-	weather,
-	routing: routerReducer
-});
+  weather,
+  routing: routerReducer
+})
 
-export default rootReducer;
+export default rootReducer

@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, { Component } from 'react'
+import { Link } from 'react-router'
+import styles from './Home.css'
 
-export default class HomePage extends Component {
-	render() {
-		return (
-			<div className="main-app-container">
-				<div className="main-app-nav">Home</div>
-				<Link to="/weather">to Weather</Link>
-			</div>
-		);
-	}
+export default class Home extends Component {
+  render () {
+    return (
+      <div className={styles.wrapper}>
+        <div className={styles.title}>Home</div>
+        <Link to='/weather'>to Weather</Link>
+      </div>
+    )
+  }
 }

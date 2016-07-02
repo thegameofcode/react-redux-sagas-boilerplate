@@ -1,0 +1,17 @@
+
+.wrapper {
+  width: 500px;
+  margin: 200px auto;
+}
+
+.wrapper > a {
+  color: #0079ff;
+  font-size: 25px;
+}
+
+.title {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
